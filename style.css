@@ -1,0 +1,57 @@
+.box {
+    height: 50px;
+}
+
+/* nikoloz */
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea {
+    width: 65%;
+}
+
+.input-wrapper {
+    width: 30%;
+}
+
+input {
+    width: 100%;
+    padding: 20px;
+}
+
+input:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: blue;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    textarea, .input-wrapper {
+        width: 100%;
+    }
+
+    textarea {
+        min-height: 300px;
+        margin-bottom: 30px;
+    }
+}
